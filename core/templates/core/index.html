@@ -26,13 +26,17 @@
   <table id="gallery" class="table table-bordered">
     <thead>
       <tr>
+        <th>File Name</th>
         <th>Uploaded Data</th>
+        <th>Uploaded At</th>
       </tr>
     </thead>
     <tbody>
       {% for data in uploads %}
         <tr>
+          <td>{{ data.title }}</td>
           <td><a href="{{ data.file.url }}">{{ data.file.name }}</a></td>
+          <td><a href="">{{ data.uploaded_at }}</a></td>
         </tr>
       {% endfor %}
     </tbody>
