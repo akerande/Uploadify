@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form method="post" action="{% url 'core:clear_database' %}">
+    {% csrf_token %}
+    <input type="hidden" name="next" value="{{ request.path }}">
+    <button type="submit" class="btn btn-danger pull-right">
+        <span class="glyphicon glyphicon-trash"></span> Delete all
+    </button>
+</form>
+<h1 class="page-header">
+    Data
+    <small>/ {% block title %}{% endblock %}</small>
+</h1>
+<div class="row">
+    <div class="col-md-3">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Menu</h3>
+            </div>
+            <div class="list-group">
+
+                <a href="{% url 'core:uploads_database' %}"
+                   class="list-group-item{% if request.path == '/uplodify/uploads/' %} active{% endif %}">
+                    Upload
+                </a>
+
+
+            </div>
+
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Sort Data By</h3>
+            </div>
+            <div class="list-group">
+                {% regroup all_posts by posted.year as year_list %}
+
+                <ul>
+                    {% for year in year_list %}
+                    <li>{{ year.grouper }}
+                        {% regroup year.list by posted.month as month_list %}
+                        <ul>
+                            {% for month in month_list %}
+                            <li><a href="{% url 'coreapp:post_archive_month' year.grouper month.grouper %}">{{
+                                month.list.0.posted|date:'b' }} ({{ month.list|length }})</a></li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-9">
+        {% block uploads_content %}
+        {% endblock %}
+    </div>
+</div>
+<script>
+    // toggle month
+    var toggleMonth = function(month) {
+        $(month).children('.events').slideToggle('slow');
+        $(month).find('.month-data div.collapsed').toggle();
+        $(month).find('.month-data div.expanded').toggle();
+    }
+
+    // expand the current month
+    toggleMonth($('#{{now.year}}-{{now.month}}'));
+
+    // intercept click to toggle month
+    $('.month-data').click(function() {
+        var month = $(this).parent();
+        toggleMonth(month);
+    });
+</script>
+{% endblock %}

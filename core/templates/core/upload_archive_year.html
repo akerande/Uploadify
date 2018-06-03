@@ -1,0 +1,14 @@
+<ul>
+    {% for date in date_list %}
+    <li>{{ date|date }}</li>
+    {% endfor %}
+</ul>
+
+<div>
+    <h5>{{ year|date:"Y" }}</h5>
+    {% for obj in object_list %}
+    <p>
+        {{ obj.title }} - {{ obj.uploaded_at|date:"F j, Y" }}
+    </p>
+    {% endfor %}
+</div>
