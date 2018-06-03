@@ -1,46 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6622c283-2e8f-448f-898c-66e3e778cf29" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uploadify.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/coreapp/js/basic-upload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/coreapp/js/drag-and-drop-upload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/coreapp/js/progress_upload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/js/jquery-3.1.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/js/jquery-file-upload/jquery.fileupload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/js/jquery-file-upload/jquery.iframe-transport.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/static/js/jquery-file-upload/vendor/jquery.ui.widget.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/templates/core/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/templates/core/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/templates/core/upload_archive_year.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploadify/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploadify/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploadify/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploadify/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploadify/templates/includes/header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploadify/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploadify/wsgi.py" afterDir="false" />
-    </list>
+    <list default="true" id="6622c283-2e8f-448f-898c-66e3e778cf29" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -143,6 +104,11 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>coreapp</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
